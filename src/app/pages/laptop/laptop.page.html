@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Laptop</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="medium">
+    <ion-searchbar [(ngModel)]="term" showCancelButton="focus"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="medium">
+    <h5 style="padding-left: 20px;">Latest Laptops</h5>
+  </ion-text>
+  <ion-slides [options]="sliderConfig">
+    <ion-slide *ngFor="let item of data | slice:0:5">
+      <ion-card>
+        <ion-card-content>
+          <div style="min-height:50px">
+            {{item.laptop_title | slice:0:25}}
+          </div>
+          <span class="text-danger"> MRP : {{item.laptop_price}} </span>
+          <img src="http://localhost/adminVinay/app/media_automator/upload/{{item.laptop_img}}" />
+          <ion-button (click)="goToDetails(item.laptop_id)" color="medium" expand="full">View </ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <hr>
+  <ion-text color="medium">
+    <h5 style="padding-left: 25px;">All Laptops</h5>
+  </ion-text>
+  <div>
+    <ion-list class="ion-no-padding ">
+      <ion-item *ngFor="let item of data |filter:term">
+        <ion-thumbnail slot="start" style="width:150px;height:75px;">
+          <img src="http://localhost/adminVinay/app/media_automator/upload/{{item.laptop_img}}" />
+        </ion-thumbnail>
+        <ion-label class="ion-text-wrap">
+          <h2>{{item.laptop_title}}</h2>
+          <ion-button size="small" color="medium" class="pull-right" (click)="goToDetails(item.laptop_id)">View </ion-button>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+</ion-content>

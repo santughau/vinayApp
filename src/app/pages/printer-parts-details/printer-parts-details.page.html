@@ -1,0 +1,22 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="printer-parts"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{printerParts.printerParts_title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <img src="http://localhost/adminVinay/app/media_automator/upload/{{printerParts.printerParts_img}}" />
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="medium">Price : {{printerParts.printerParts_price}} INR</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div style="text-align: justify;" [innerHTML]="printerParts.printerParts_desc"></div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

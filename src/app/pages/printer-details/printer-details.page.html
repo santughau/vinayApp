@@ -1,0 +1,23 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="printer"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{printer.printer_title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-no-padding ">
+  <img src="http://localhost/adminVinay/app/media_automator/upload/{{printer.printer_img}}" />
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="medium">Price : {{printer.printer_price}} INR</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div style="text-align: justify;" [innerHTML]="printer.printer_desc"></div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

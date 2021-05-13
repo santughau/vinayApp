@@ -1,0 +1,206 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="services"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Services</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ng-container *ngIf="selectedId == '1'">
+    <img src="../../../assets/001.jpg" />
+    <ion-card>
+
+      <ion-card-content>
+        <div style="text-align: justify;">
+          <h1 class="text-primary text-center">A complete solution of your Computers problems!</h1>
+          <hr>
+          <small class="text-center text-secondary">
+            <h3>Vinay Computers offers professional services for desktop PC repair for all brands, makes & models on all
+              operating
+              system (Windows and Linux). </h3>
+          </small>
+          <hr>
+          <p class="indent" style="text-align:justify;">We offer qualitative troubleshooting, up-gradation and repair
+            services that can
+            help
+            users to keep their Desktop in good working condition.
+            <strong>Desktop Repair </strong>is made easy by our experienced and diligent team of desktop repair
+            technicians from
+            <strong>Vinay Computers</strong>.
+          </p>
+
+          <p class="indent" style="text-align:justify;">Imagine you cannot access your important documents or your
+            emails, or you’ve
+            lost an
+            important photograph album etc, it’s surely not going to be a pleasant encounter. Repeated PC problems are
+            faced by us
+            and for this, we must consult to some experienced technicians.We will troubleshoot your Windows OS, migrate
+            your data,
+            perform a thorough cleanup, as well as apply upgrades to all applications and install a state of the art
+            Internet
+            security program to keep you protected. </p>
+          <p class="indent" style="text-align:justify;">Vinay Computers has expertise to solve problems usually faced by
+            PC users like:
+          </p>
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let item of comp">
+            <ion-label class="ion-text-wrap">{{item}}</ion-label>
+          </ion-item>
+
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+
+  <!--------------2 -->
+  <ng-container *ngIf="selectedId == '2'">
+    <img src="../../../assets/002.jpg" />
+    <ion-card>
+
+      <ion-card-content>
+        <div style="text-align: justify;">
+          <h1 class="text-primary text-center">A complete solution of your Printer problems!</h1>
+          <hr>
+          <small class="text-center text-secondary">
+            <h3>For over 16 years Vinay Computer Services has been providing quality and reliable printer and IT support
+              and services to
+              businesses in Degloor City area. Our techs have decades of experience diagnosing, troubleshooting and
+              supporting business grade printers.</h3>
+          </small>
+          <hr>
+          <p class="indent" style="text-align:justify;">We offer qualitative troubleshooting, up-gradation and repair
+            services that can
+            help
+            users to keep their Printers in good working condition.
+            <strong>Printer Repair </strong>is made easy by our experienced and diligent team of Printer repair
+            technicians from
+            <strong>Vinay Computers</strong>.
+          </p>
+          <p class="indent">Here are some services and common problems occour in Printer mostly which we fix : </p>
+
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let item of print">
+            <ion-label class="ion-text-wrap">{{item}}</ion-label>
+          </ion-item>
+
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+  <!-----------3-->
+  <ng-container *ngIf="selectedId == '3'">
+    <img src="../../../assets/003.jpg" />
+    <ion-card>
+  
+      <ion-card-content>
+        <div style="text-align: justify;">
+          <h1 class="text-primary text-center">A complete solution of your Networking problems!</h1>
+          <hr>
+          <small class="text-center text-secondary">
+            <h3>Vinay Computers provides various Networking and Annual Maintenance Contract (AMC) Services for all sized businesses like
+            Wired and WiFi LAN Networking Solution.</h3>
+          </small>
+          <hr>
+          <p class="indent" style="text-align:justify;"><b>Vinay Computers</b> provides various Networking and Annual Maintenance Contract (AMC)
+            Services for all sized businesses like Wired and WiFi LAN Networking Solution. IT Cabling and Infrastructure. Switches
+            Routers Modems Racks. Structrured Cabling. Network Maintenance AMC. Network Design and Consultancy. Resource Sharing
+            in Network. Internal Server Implementation. Network Security. </p>
+          
+          <p class="indent" style="text-align:justify;">Do you have one internet connection and more than one computer and want to share files
+            with your other computer. But you don’t know how to do. Don’t worry we can help you work out what would be the most
+            suitable solution for your family’s needs, and most importantly, make sure your connection is both safe and secure.
+          </p>
+          
+          <p class="indent" style="text-align:justify;">Server networking is the process of linking computers and peripherals together allowing
+            you to swap files. Some of the server and networking services we provide are: </p>
+          <p class="indent" style="text-align:justify;">with other employees, share printers, scanners, and high speed internet access.</p>
+          <p class="indent" style="text-align:justify;">For businesses with multiple employees, this can be a crucial function into today’s
+            technology age. For businesses with or needing a computer network in the Degloor and surrounding areas, Vinay Computers
+            offer network and server set up, trouble-shooting, and service, fast and cost effectively. </p>
+          <p class="indent" style="text-align:justify;">We offer high-performance networking services that include the setting up, maintenance
+            and management of:</p>
+  
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let item of network">
+            <ion-label class="ion-text-wrap">{{item}}</ion-label>
+          </ion-item>
+  
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+  <!-----------4-->
+  <ng-container *ngIf="selectedId == '4'">
+    <img src="../../../assets/004.jpg" />
+    <ion-card>
+  
+      <ion-card-content>
+        <div style="text-align: justify;">
+          <h1 class="text-primary text-center">Creative Web Design Services</h1>
+          <hr>
+          <small class="text-center text-secondary">
+            <h3>We do not just web design, but out-of-the box digital experiences that takes your business to the next level!</h3>
+          </small>
+          <hr>
+          <p class="indent" style="text-align:justify;">We are a web design company in Degloor. We design websites and eCommerce sites for ALL PLATFORMS,
+            Mobile Devices, and Screens. A well developed web design will have a high degree of usability (UX/UI) and really make
+            you stand out from the crowd. We provide full SEO services, Translations and Localization and maintenance for your
+            company as well as e-commerce sites and full re-designs. <br><br>Your website is the first impression you make to
+            potential clients. You want a website that will represent your company within seconds of people viewing it. Now, more
+            than ever before it is imperative to select a web design company, who can deliver you a website that will improve your
+            business. Our talented designers and developers will bring your website to life, creating a solution that maintains a
+            user experience that will allow your business to grow.</p>
+          <hr>
+          <h3 class="text-center text-secondary">Custom Web Development</h3>
+          <p class="indent" >We can develop customized database driven content management systems (CMS) to meet your business
+            requirements. Whether you need an e-commerce catalog, brochure website for your English school, sales lead generator,
+            social networking site or some other web solution, we can design and code it to meet your request.</p>
+  
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let item of web">
+            <ion-label class="ion-text-wrap">{{item}}</ion-label>
+          </ion-item>
+  
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+
+  <!-----------5-->
+  <ng-container *ngIf="selectedId == '5'">
+    <img src="../../../assets/005.jpg" />
+    <ion-card>
+  
+      <ion-card-content>
+        <div style="text-align: justify;">
+          <h1 class="text-primary text-center">DESIGN AND DEVELOPMENT OF MOBILE APPS</h1>
+          <hr>
+          <small class="text-center text-secondary">
+            <h3>We do not just web design, but out-of-the box digital experiences that takes your business to the next
+              level!</h3>
+          </small>
+          <hr>
+          <p class="indent" style="text-align:justify;">Vinay Computers – the place to give life to your app ideas. Vinay Computers -  emerged as the top notch mobile app
+          development company in Degloor with focused use of resources and opportunities with a zeal.A long list of
+          successfully developed and deployed apps spanning from iOS to Android to Blackberry to our credit. Home grown tools form
+          the backbone of our end-to end mobile app development services. Come and experience the unique range and personalized
+          app development services With Vinay Computers.</p>
+          
+  
+        </div>
+        <ion-list>
+          <ion-item *ngFor="let item of appList">
+            <ion-label class="ion-text-wrap">{{item}}</ion-label>
+          </ion-item>
+  
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </ng-container>
+</ion-content>

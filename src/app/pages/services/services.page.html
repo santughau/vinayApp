@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Vinay's Services</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header color="primary">
+            <ion-card-title class="text-center">Computer Repairing</ion-card-title>
+          </ion-card-header>
+          <img src="../../../assets/001.jpg" />
+        
+          <ion-card-content>
+            <ion-button (click)="goToDetail(1)" color="primary" expand="block">View Details</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header color="danger">
+            <ion-card-title class="text-center">Printer Repairing</ion-card-title>
+          </ion-card-header>
+          <img src="../../../assets/002.jpg" />
+        
+          <ion-card-content>
+            <ion-button (click)="goToDetail(2)" color="danger" expand="block">View Details</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header color="success">
+            <ion-card-title class="text-center">Networking Solutions</ion-card-title>
+          </ion-card-header>
+          <img src="../../../assets/003.jpg" />
+    
+          <ion-card-content>
+            <ion-button (click)="goToDetail(3)" color="success" expand="block">View Details</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header color="tertiary">
+            <ion-card-title class="text-center">Website Design</ion-card-title>
+          </ion-card-header>
+          <img src="../../../assets/004.jpg" />
+    
+          <ion-card-content>
+            <ion-button (click)="goToDetail(4)" color="tertiary" expand="block">View Details</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header color="medium">
+            <ion-card-title class="text-center">Mobile Application</ion-card-title>
+          </ion-card-header>
+          <img src="../../../assets/005.jpg" />
+    
+          <ion-card-content>
+            <ion-button (click)="goToDetail(5)" color="medium" expand="block">View Details</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-header color="secondary">
+            <ion-card-title class="text-center" style="font-size: 18px;">Software Development</ion-card-title>
+          </ion-card-header>
+          <img src="../../../assets/006.jpg" />
+    
+          <ion-card-content>
+            <ion-button (click)="goToDetail(4)" color="secondary" expand="block">View Details</ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
